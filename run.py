@@ -8,6 +8,10 @@ from keras.utils.np_utils import to_categorical
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def index():
+    return "A nossa API está <span style='color: green; font-size: 30px'>online</span> em /api/"
+
 @app.route('/predicao/', methods=['GET'])
 def predicao():
 
@@ -60,10 +64,6 @@ def predicao():
     acc = float(n_correct) / (n_correct + n_wrong) * 100
 
     return "Acc: " + str(acc)  + "%"
-
-@app.route('/', methods=['GET'])
-def index():
-    return "A nossa API está <span style='color: green; font-size: 30px'>online</span> em /api/"
 
 @app.route('/api/', methods=['POST'])
 def api():
