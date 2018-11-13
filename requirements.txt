@@ -1,10 +1,6 @@
-gunicorn==19.0.0
-Click==7.0
-Flask==1.0.2
-Flask-API==1.0
-Jinja2==2.10
-MarkupSafe==1.0
-Werkzeug==0.14.1
-keras
-tensorflow==1.4.0
-numpy==1.13.3
+scipy
+numpy
+tensorflow
+flask
+gunicorn
+flask_cors
