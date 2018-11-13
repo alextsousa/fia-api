@@ -1,1 +1,1 @@
-gunicorn app:run.py
+gunicorn app:run
