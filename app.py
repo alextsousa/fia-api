@@ -15,7 +15,7 @@ import base64
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route("/")
 def index():
     return "A nossa API está <span style='color: green; font-size: 30px'>online</span> em /api/"
 
