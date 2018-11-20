@@ -17,7 +17,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "A nossa API está <span style='color: green; font-size: 30px'>online</span> em /api/"
+    import tensorflow as tf
+    return "A versão do tensorflow é" tf.__version__
 
 if __name__ == "__main__":
     app.debug=true
