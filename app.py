@@ -18,7 +18,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     import tensorflow as tf
-    return "A versão do tensorflow é" tf.__version__
+    return "A versão do tensorflow é"  + tf.__version__
 
 if __name__ == "__main__":
     app.debug=true
